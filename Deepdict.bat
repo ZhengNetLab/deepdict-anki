@@ -1,2 +1,2 @@
 @echo off
-python "C:\Users\Xin\GitHub\deepdict\Deepdict.py" %*
+python "%~dp0Deepdict.py" %*

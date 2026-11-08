@@ -43,7 +43,7 @@ Run it with no arguments for interactive mode. Type one query per line, and pres
 python Deepdict.py
 ```
 
-On Windows, `Deepdict.bat` wraps the script. Put this folder on your `PATH` and you can run `deepdict Haus` from anywhere. If you move the project, update the path inside the `.bat` file.
+On Windows, `Deepdict.bat` wraps the script. Put this folder on your `PATH` and you can run `deepdict Haus` from anywhere. It finds `Deepdict.py` relative to its own location, so it keeps working if you move or clone the project.
 
 ## Anki export
 
