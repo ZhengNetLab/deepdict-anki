@@ -83,6 +83,10 @@ def translate(text):
 
 
 def lookup(text, saved):
+    # 去掉 BOM（PowerShell 管道或某些复制来源会带上），避免空查询被发出和保存
+    text = text.replace("\ufeff", "").strip()
+    if not text:
+        return
     result = translate(text)
     print(result)
     try:
